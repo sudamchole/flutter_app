@@ -110,7 +110,7 @@ class _HomeState extends State<Home> {
       shrinkWrap: true,
       crossAxisCount: 2,
       childAspectRatio: MediaQuery.of(context).size.width /
-        (MediaQuery.of(context).size.height),
+        (MediaQuery.of(context).size.height/1.2-MediaQuery.of(context).padding.vertical),
       mainAxisSpacing: 32,
       crossAxisSpacing: 5,
       children: new List<Widget>.generate(titleList.length, (index) {
